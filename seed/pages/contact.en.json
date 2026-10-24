@@ -1,0 +1,54 @@
+{
+  "slug": "/contact",
+  "locale": "en",
+  "title": "Contact",
+  "layoutKey": "default",
+  "seo": {
+    "title": "Contact Northwind: let's talk about your site",
+    "description": "Write or call the Northwind team. We reply to every message within one working day and are happy to discuss your project."
+  },
+  "componentTree": [
+    {
+      "id": "contact-hero",
+      "type": "hero",
+      "props": {
+        "heading": "Contact",
+        "subheading": "Questions about a project or about the CMS? We would love to hear from you.",
+        "primaryHref": "/contact",
+        "secondaryHref": "/about",
+        "imageAlt": "",
+        "layout": "centered"
+      }
+    },
+    {
+      "id": "contact-contact",
+      "type": "contact",
+      "props": {
+        "heading": "Say hello",
+        "description": "Send us a message or use the details below.",
+        "submitLabel": "Send message",
+        "address": "Northwind Studio\n12 Harbour Street, Gdańsk",
+        "formId": "",
+        "email": "hello@example.com",
+        "phone": "+48 600 000 000"
+      }
+    },
+    {
+      "id": "contact-faq",
+      "type": "faq",
+      "props": {
+        "heading": "Before you write",
+        "items": [
+          {
+            "question": "How quickly will you reply?",
+            "answer": "We answer every message within one working day, usually much sooner."
+          },
+          {
+            "question": "Can we visit your studio?",
+            "answer": "Of course. Book a time by email and we will make sure someone is there to show you around."
+          }
+        ]
+      }
+    }
+  ]
+}

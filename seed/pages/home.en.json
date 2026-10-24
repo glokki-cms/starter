@@ -1,0 +1,150 @@
+{
+  "slug": "/",
+  "locale": "en",
+  "title": "Home",
+  "layoutKey": "default",
+  "seo": {
+    "title": "Northwind: websites your team can edit",
+    "description": "Northwind builds fast, multilingual websites that your marketing team can update on its own, without waiting for a developer."
+  },
+  "componentTree": [
+    {
+      "id": "home-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Websites without the bottleneck",
+        "heading": "Websites your team can edit without breaking",
+        "subheading": "Northwind designs and ships fast, multilingual sites. Your editors change copy, images and layout themselves, and publish in one click.",
+        "primaryLabel": "Talk to us",
+        "primaryHref": "/contact",
+        "secondaryLabel": "About Northwind",
+        "secondaryHref": "/about",
+        "image": "seed/assets/hero.webp",
+        "imageAlt": "Abstract illustration of a website layout",
+        "layout": "split"
+      }
+    },
+    {
+      "id": "home-logo-cloud",
+      "type": "logo-cloud",
+      "props": {
+        "heading": "Trusted by teams across Europe",
+        "logos": [
+          {
+            "name": "Northwind",
+            "image": "seed/assets/logo-1.webp"
+          },
+          {
+            "name": "Atelier",
+            "image": "seed/assets/logo-2.webp"
+          },
+          {
+            "name": "Signal",
+            "image": "seed/assets/logo-3.webp"
+          },
+          {
+            "name": "Fjord",
+            "image": "seed/assets/logo-4.webp"
+          },
+          {
+            "name": "Kestrel",
+            "image": "seed/assets/logo-5.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-features-grid",
+      "type": "features-grid",
+      "props": {
+        "eyebrow": "Why Northwind",
+        "heading": "Everything a modern site needs",
+        "description": "A small set of well-built sections, so every page stays consistent and quick to load.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Fast by default",
+            "text": "Pages are cached at the edge and refresh the moment you publish a change."
+          },
+          {
+            "icon": "globe",
+            "title": "Every language",
+            "text": "Translate each page and keep one structure across all of your locales."
+          },
+          {
+            "icon": "shield",
+            "title": "Your code, your domain",
+            "text": "The site runs in your own repository and your own hosting account."
+          }
+        ],
+        "columns": "3"
+      }
+    },
+    {
+      "id": "home-media-text",
+      "type": "media-text",
+      "props": {
+        "eyebrow": "How we work",
+        "heading": "Built around how your team works",
+        "body": "<p>We start with your content, not with a template. Together we choose the sections you need, then your editors take over and keep the site fresh.</p><p>No tickets, no waiting for the next release.</p>",
+        "imageAlt": "Abstract illustration of an open-plan office",
+        "linkLabel": "Start a project",
+        "image": "seed/assets/office.webp",
+        "imageSide": "right",
+        "linkHref": "/contact"
+      }
+    },
+    {
+      "id": "home-testimonials",
+      "type": "testimonials",
+      "props": {
+        "eyebrow": "Customers",
+        "heading": "What our clients say",
+        "items": [
+          {
+            "quote": "We publish changes in minutes now, without waiting for a developer.",
+            "name": "Anna Kowalska",
+            "role": "Marketing lead, Atelier"
+          },
+          {
+            "quote": "The site got faster and our editors finally stopped being afraid of it.",
+            "name": "Tomás Rivera",
+            "role": "Founder, Fjord"
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-faq",
+      "type": "faq",
+      "props": {
+        "heading": "Frequently asked questions",
+        "items": [
+          {
+            "question": "How long does it take to launch?",
+            "answer": "Most sites go live within a week. We start from proven sections and adapt them to your content."
+          },
+          {
+            "question": "Can we edit the site ourselves?",
+            "answer": "Yes. Every page is edited visually in the browser, and changes go live when you publish."
+          },
+          {
+            "question": "Is the site multilingual?",
+            "answer": "Yes. Each page can be translated, and visitors are sent to the right language automatically."
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-cta",
+      "type": "cta",
+      "props": {
+        "heading": "Ready to start?",
+        "text": "Tell us about your project and we will get back to you within one working day.",
+        "buttonLabel": "Get in touch",
+        "buttonHref": "/contact",
+        "variant": "accent"
+      }
+    }
+  ]
+}

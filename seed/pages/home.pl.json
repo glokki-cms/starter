@@ -1,0 +1,150 @@
+{
+  "slug": "/",
+  "locale": "pl",
+  "title": "Strona główna",
+  "layoutKey": "default",
+  "seo": {
+    "title": "Northwind: strony, które edytuje Twój zespół",
+    "description": "Northwind tworzy szybkie, wielojęzyczne strony internetowe, które Twój zespół aktualizuje samodzielnie, bez czekania na programistę."
+  },
+  "componentTree": [
+    {
+      "id": "home-hero",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Strony bez wąskiego gardła",
+        "heading": "Strona, którą Twój zespół edytuje bez obaw",
+        "subheading": "Northwind projektuje i wdraża szybkie, wielojęzyczne strony. Redaktorzy sami zmieniają teksty, obrazy i układ, a publikują jednym kliknięciem.",
+        "primaryLabel": "Napisz do nas",
+        "primaryHref": "/kontakt",
+        "secondaryLabel": "Poznaj Northwind",
+        "secondaryHref": "/o-nas",
+        "image": "seed/assets/hero.webp",
+        "imageAlt": "Abstrakcyjna ilustracja układu strony internetowej",
+        "layout": "split"
+      }
+    },
+    {
+      "id": "home-logo-cloud",
+      "type": "logo-cloud",
+      "props": {
+        "heading": "Zaufały nam zespoły z całej Europy",
+        "logos": [
+          {
+            "name": "Northwind",
+            "image": "seed/assets/logo-1.webp"
+          },
+          {
+            "name": "Atelier",
+            "image": "seed/assets/logo-2.webp"
+          },
+          {
+            "name": "Signal",
+            "image": "seed/assets/logo-3.webp"
+          },
+          {
+            "name": "Fjord",
+            "image": "seed/assets/logo-4.webp"
+          },
+          {
+            "name": "Kestrel",
+            "image": "seed/assets/logo-5.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-features-grid",
+      "type": "features-grid",
+      "props": {
+        "eyebrow": "Dlaczego Northwind",
+        "heading": "Wszystko, czego potrzebuje nowoczesna strona",
+        "description": "Niewielki zestaw dopracowanych sekcji sprawia, że każda podstrona jest spójna i szybko się ładuje.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Szybka od pierwszej wizyty",
+            "text": "Strony trafiają do pamięci podręcznej na brzegu sieci i odświeżają się, gdy tylko opublikujesz zmianę."
+          },
+          {
+            "icon": "globe",
+            "title": "W każdym języku",
+            "text": "Tłumacz każdą podstronę i zachowaj jedną strukturę we wszystkich wersjach językowych."
+          },
+          {
+            "icon": "shield",
+            "title": "Twój kod, Twoja domena",
+            "text": "Strona działa w Twoim repozytorium i na Twoim koncie hostingowym."
+          }
+        ],
+        "columns": "3"
+      }
+    },
+    {
+      "id": "home-media-text",
+      "type": "media-text",
+      "props": {
+        "eyebrow": "Jak pracujemy",
+        "heading": "Dopasowana do tego, jak pracuje Twój zespół",
+        "body": "<p>Zaczynamy od Waszych treści, a nie od gotowego szablonu. Razem wybieramy potrzebne sekcje, a potem stronę przejmują redaktorzy i dbają o jej aktualność.</p><p>Bez zgłoszeń i bez czekania na kolejne wydanie.</p>",
+        "imageAlt": "Abstrakcyjna ilustracja biura typu open space",
+        "linkLabel": "Zacznij projekt",
+        "image": "seed/assets/office.webp",
+        "imageSide": "right",
+        "linkHref": "/kontakt"
+      }
+    },
+    {
+      "id": "home-testimonials",
+      "type": "testimonials",
+      "props": {
+        "eyebrow": "Klienci",
+        "heading": "Co mówią o nas klienci",
+        "items": [
+          {
+            "quote": "Zmiany publikujemy w kilka minut i nie czekamy już na programistę.",
+            "name": "Anna Kowalska",
+            "role": "Szefowa marketingu, Atelier"
+          },
+          {
+            "quote": "Strona przyspieszyła, a nasi redaktorzy w końcu przestali się jej bać.",
+            "name": "Tomás Rivera",
+            "role": "Założyciel, Fjord"
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-faq",
+      "type": "faq",
+      "props": {
+        "heading": "Najczęstsze pytania",
+        "items": [
+          {
+            "question": "Ile trwa wdrożenie?",
+            "answer": "Większość stron rusza w ciągu tygodnia. Zaczynamy od sprawdzonych sekcji i dopasowujemy je do Waszych treści."
+          },
+          {
+            "question": "Czy sami możemy edytować stronę?",
+            "answer": "Tak. Każdą podstronę edytuje się wizualnie w przeglądarce, a zmiany trafiają na żywo po publikacji."
+          },
+          {
+            "question": "Czy strona jest wielojęzyczna?",
+            "answer": "Tak. Każdą podstronę można przetłumaczyć, a odwiedzający trafiają automatycznie na właściwą wersję językową."
+          }
+        ]
+      }
+    },
+    {
+      "id": "home-cta",
+      "type": "cta",
+      "props": {
+        "heading": "Gotowi na start?",
+        "text": "Opowiedz nam o swoim projekcie, a odpiszemy w ciągu jednego dnia roboczego.",
+        "buttonLabel": "Napisz do nas",
+        "buttonHref": "/kontakt",
+        "variant": "accent"
+      }
+    }
+  ]
+}

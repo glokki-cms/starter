@@ -1,0 +1,55 @@
+{
+  "slug": "/about",
+  "locale": "en",
+  "title": "About us",
+  "layoutKey": "default",
+  "seo": {
+    "title": "About Northwind: a small studio for the web",
+    "description": "Meet Northwind, a small studio that builds fast, editable websites and helps teams take full ownership of their content."
+  },
+  "componentTree": [
+    {
+      "id": "about-hero",
+      "type": "hero",
+      "props": {
+        "heading": "About us",
+        "subheading": "A small studio that believes websites should be easy to run.",
+        "primaryHref": "/contact",
+        "secondaryHref": "/about",
+        "imageAlt": "",
+        "layout": "centered"
+      }
+    },
+    {
+      "id": "about-rich-text",
+      "type": "rich-text",
+      "props": {
+        "content": "<h2>Our story</h2><p>Northwind started in 2019 with a simple frustration: every small copy change needed a developer. We set out to build sites that editors can safely change on their own.</p><p>Today we are a team of eleven designers, engineers and editors working with companies across Europe. We care about speed, accessibility and clear writing.</p><p>What guides our work:</p><ul><li>Content comes first, design follows</li><li>Every page loads fast on every device</li><li>Editors own the site, not the other way round</li></ul>"
+      }
+    },
+    {
+      "id": "about-media-text",
+      "type": "media-text",
+      "props": {
+        "heading": "The people behind Northwind",
+        "body": "<p>We work in small, senior teams. The person you meet at the kickoff is the one who ships your site.</p>",
+        "image": "seed/assets/team.webp",
+        "imageAlt": "Abstract illustration of a team",
+        "imageSide": "left",
+        "linkLabel": "Meet us",
+        "linkHref": "/contact"
+      }
+    },
+    {
+      "id": "about-cta",
+      "type": "cta",
+      "props": {
+        "heading": "Want to work together?",
+        "text": "We take on a few new projects every quarter.",
+        "buttonLabel": "Get in touch",
+        "buttonHref": "/contact",
+        "variant": "subtle"
+      }
+    }
+  ]
+}

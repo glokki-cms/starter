@@ -1,0 +1,55 @@
+{
+  "slug": "/o-nas",
+  "locale": "pl",
+  "title": "O nas",
+  "layoutKey": "default",
+  "seo": {
+    "title": "O Northwind: małe studio internetowe",
+    "description": "Poznaj Northwind, małe studio tworzące szybkie, łatwe w edycji strony i pomagające zespołom w pełni zarządzać własnymi treściami."
+  },
+  "componentTree": [
+    {
+      "id": "about-hero",
+      "type": "hero",
+      "props": {
+        "heading": "O nas",
+        "subheading": "Małe studio, które wierzy, że prowadzenie strony powinno być proste.",
+        "primaryHref": "/kontakt",
+        "secondaryHref": "/o-nas",
+        "imageAlt": "",
+        "layout": "centered"
+      }
+    },
+    {
+      "id": "about-rich-text",
+      "type": "rich-text",
+      "props": {
+        "content": "<h2>Nasza historia</h2><p>Northwind powstało w 2019 roku z prostej frustracji: każda drobna zmiana tekstu wymagała programisty. Postanowiliśmy budować strony, które redaktorzy mogą bezpiecznie zmieniać sami.</p><p>Dziś jesteśmy zespołem jedenastu projektantów, inżynierów i redaktorów, a pracujemy z firmami z całej Europy. Dbamy o szybkość, dostępność i przejrzysty język.</p><p>Czym się kierujemy:</p><ul><li>Najpierw treść, potem projekt</li><li>Każda podstrona szybko się ładuje na każdym urządzeniu</li><li>To redaktorzy rządzą stroną, a nie odwrotnie</li></ul>"
+      }
+    },
+    {
+      "id": "about-media-text",
+      "type": "media-text",
+      "props": {
+        "heading": "Ludzie stojący za Northwind",
+        "body": "<p>Pracujemy w małych, doświadczonych zespołach. Osoba, którą poznasz na pierwszym spotkaniu, jest tą samą, która wdroży Twoją stronę.</p>",
+        "image": "seed/assets/team.webp",
+        "imageAlt": "Abstrakcyjna ilustracja zespołu",
+        "imageSide": "left",
+        "linkLabel": "Poznaj nas",
+        "linkHref": "/kontakt"
+      }
+    },
+    {
+      "id": "about-cta",
+      "type": "cta",
+      "props": {
+        "heading": "Chcesz z nami pracować?",
+        "text": "W każdym kwartale podejmujemy się kilku nowych projektów.",
+        "buttonLabel": "Napisz do nas",
+        "buttonHref": "/kontakt",
+        "variant": "subtle"
+      }
+    }
+  ]
+}

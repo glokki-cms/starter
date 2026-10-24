@@ -1,0 +1,43 @@
+{
+  "layoutKey": "default",
+  "locale": "pl",
+  "header": {
+    "siteName": "Northwind",
+    "items": [
+      {
+        "label": "Strona główna",
+        "href": "/"
+      },
+      {
+        "label": "O nas",
+        "href": "/o-nas"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/kontakt"
+      }
+    ],
+    "ctaLabel": "Napisz do nas",
+    "ctaHref": "/kontakt",
+    "showLocaleSwitcher": true
+  },
+  "footer": {
+    "tagline": "Szybkie, wielojęzyczne strony, które edytuje Twój zespół.",
+    "columns": [
+      {
+        "title": "Firma",
+        "links": [
+          {
+            "label": "O nas",
+            "href": "/o-nas"
+          },
+          {
+            "label": "Kontakt",
+            "href": "/kontakt"
+          }
+        ]
+      }
+    ],
+    "legal": "© 2026 Northwind"
+  }
+}

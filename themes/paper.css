@@ -1,0 +1,29 @@
+[data-theme="paper"] {
+  --bg: #f6f1e8;
+  --fg: #1d1a16;
+  --muted: #5f574c;
+  --surface: #fbf8f2;
+  --line: #e2d8c8;
+  --accent: #b4532a;
+  --on-accent: #ffffff;
+  --accent-soft: #ecd3c3;
+  --theme-font-display: var(--font-fraunces);
+  --theme-font-body: var(--font-source-serif);
+  --radius: 4px;
+  --radius-lg: 8px;
+  --heading-weight: 600;
+  --heading-tracking: -0.01em;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="paper"] {
+    --bg: #1c1915;
+    --fg: #f1ebe0;
+    --muted: #b3a998;
+    --surface: #25211c;
+    --line: #3a342c;
+    --accent: #e07a4f;
+    --on-accent: #1c1915;
+    --accent-soft: #4a2c1f;
+  }
+}

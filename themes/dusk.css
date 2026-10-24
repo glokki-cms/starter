@@ -1,0 +1,17 @@
+/* Dusk is dark by design — no light variant. */
+[data-theme="dusk"] {
+  --bg: #121316;
+  --fg: #f2f1ec;
+  --muted: #9a9ca3;
+  --surface: #1b1d21;
+  --line: #2a2d33;
+  --accent: #c6f36b;
+  --on-accent: #121316;
+  --accent-soft: #33401c;
+  --theme-font-display: var(--font-space-grotesk);
+  --theme-font-body: var(--font-space-grotesk);
+  --radius: 16px;
+  --radius-lg: 24px;
+  --heading-weight: 700;
+  --heading-tracking: -0.02em;
+}

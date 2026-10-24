@@ -1,0 +1,43 @@
+{
+  "layoutKey": "default",
+  "locale": "en",
+  "header": {
+    "siteName": "Northwind",
+    "items": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "ctaLabel": "Get in touch",
+    "ctaHref": "/contact",
+    "showLocaleSwitcher": true
+  },
+  "footer": {
+    "tagline": "Fast, multilingual websites that your team can edit.",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About",
+            "href": "/about"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ]
+      }
+    ],
+    "legal": "© 2026 Northwind"
+  }
+}

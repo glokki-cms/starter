@@ -1,0 +1,54 @@
+{
+  "slug": "/kontakt",
+  "locale": "pl",
+  "title": "Kontakt",
+  "layoutKey": "default",
+  "seo": {
+    "title": "Kontakt z Northwind: porozmawiajmy o stronie",
+    "description": "Napisz lub zadzwoń do zespołu Northwind. Odpowiadamy na każdą wiadomość w ciągu jednego dnia roboczego i chętnie omówimy Twój projekt."
+  },
+  "componentTree": [
+    {
+      "id": "contact-hero",
+      "type": "hero",
+      "props": {
+        "heading": "Kontakt",
+        "subheading": "Pytania o projekt lub o system CMS? Chętnie z Tobą porozmawiamy.",
+        "primaryHref": "/kontakt",
+        "secondaryHref": "/o-nas",
+        "imageAlt": "",
+        "layout": "centered"
+      }
+    },
+    {
+      "id": "contact-contact",
+      "type": "contact",
+      "props": {
+        "heading": "Odezwij się",
+        "description": "Wyślij wiadomość lub skorzystaj z danych poniżej.",
+        "submitLabel": "Wyślij wiadomość",
+        "address": "Studio Northwind\nul. Portowa 12, Gdańsk",
+        "formId": "",
+        "email": "hello@example.com",
+        "phone": "+48 600 000 000"
+      }
+    },
+    {
+      "id": "contact-faq",
+      "type": "faq",
+      "props": {
+        "heading": "Zanim napiszesz",
+        "items": [
+          {
+            "question": "Jak szybko odpowiadacie?",
+            "answer": "Na każdą wiadomość odpowiadamy w ciągu jednego dnia roboczego, zwykle znacznie szybciej."
+          },
+          {
+            "question": "Czy możemy odwiedzić Wasze studio?",
+            "answer": "Oczywiście. Umów termin mailowo, a zadbamy o to, żeby ktoś Cię oprowadził."
+          }
+        ]
+      }
+    }
+  ]
+}

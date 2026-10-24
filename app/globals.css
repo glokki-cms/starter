@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "../themes/paper.css";
+@import "../themes/grid.css";
+@import "../themes/dusk.css";
+
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-display: var(--theme-font-display);
+  --font-body: var(--theme-font-body);
+  --radius-theme: var(--radius);
+  --radius-theme-lg: var(--radius-lg);
+}
+
+@layer base {
+  html {
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font-family: var(--theme-font-body), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .heading {
+    font-family:
+      var(--theme-font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: var(--heading-weight);
+    letter-spacing: var(--heading-tracking);
+    text-wrap: balance;
+  }
+  .prose-theme {
+    --tw-prose-body: var(--fg);
+    --tw-prose-headings: var(--fg);
+    --tw-prose-links: var(--accent);
+    --tw-prose-bold: var(--fg);
+    --tw-prose-quotes: var(--fg);
+    --tw-prose-quote-borders: var(--accent);
+    --tw-prose-bullets: var(--muted);
+    --tw-prose-counters: var(--muted);
+    --tw-prose-hr: var(--line);
+    --tw-prose-code: var(--fg);
+    --tw-prose-captions: var(--muted);
+  }
+  .prose-theme :where(h1, h2, h3, h4) {
+    font-family:
+      var(--theme-font-display), ui-sans-serif, system-ui, sans-serif;
+    font-weight: var(--heading-weight);
+    letter-spacing: var(--heading-tracking);
+  }
+}
