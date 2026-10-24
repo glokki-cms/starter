@@ -19,7 +19,7 @@ export function ContactSetupHint() {
       <div className="py-10 text-center text-sm text-muted">
         <p className="text-fg font-medium">No form connected yet</p>
         <p className="mt-2">
-          Create a form in glökki (Forms), copy its ID and paste it into this
+          Create a form in glokki (Forms), copy its ID and paste it into this
           block.
         </p>
       </div>

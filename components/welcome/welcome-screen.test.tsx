@@ -31,7 +31,7 @@ describe("WelcomeScreen", () => {
         cmsUrl="https://cms.example.com"
       />
     )
-    expect(screen.getByRole("link", { name: /open glökki/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /open glokki/i })).toHaveAttribute(
       "href",
       "https://cms.example.com/pages"
     )

@@ -85,7 +85,7 @@ export const ContactBlock = defineBlock({
   label: "Contact",
   category: "conversion",
   icon: "Mail",
-  description: "Contact details next to a glökki form",
+  description: "Contact details next to a glokki form",
   defaultProps: {
     heading: "Let’s talk",
     description:

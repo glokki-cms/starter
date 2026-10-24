@@ -1,20 +1,20 @@
-# glökki Starter
+# glokki Starter
 
-A Next.js 16 website starter for [glökki CMS](https://app.glokki.com). It ships ten ready-made blocks, three themes, a default header and footer layout, and the plumbing a real site needs: visual-editor preview, webhook-driven revalidation, a sitemap, robots rules, an image proxy and Markdown for agents. Connect it to your glökki organization, edit content in the visual editor, and publish.
+A Next.js 16 website starter for [glokki CMS](https://app.glokki.com). It ships ten ready-made blocks, three themes, a default header and footer layout, and the plumbing a real site needs: visual-editor preview, webhook-driven revalidation, a sitemap, robots rules, an image proxy and Markdown for agents. Connect it to your glokki organization, edit content in the visual editor, and publish.
 
 ## Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fglokki-cms%2Fstarter&env=CMS_BASE_URL,CMS_TENANT,CMS_API_KEY,CMS_REVALIDATE_SECRET&envDefaults=%7B%22CMS_BASE_URL%22%3A%22https%3A%2F%2Fapp.glokki.com%22%7D&envDescription=Values%20from%20your%20gl%C3%B6kki%20organization&envLink=https%3A%2F%2Fgithub.com%2Fglokki-cms%2Fstarter%23connect-to-glokki)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fglokki-cms%2Fstarter&env=CMS_BASE_URL,CMS_TENANT,CMS_API_KEY,CMS_REVALIDATE_SECRET&envDefaults=%7B%22CMS_BASE_URL%22%3A%22https%3A%2F%2Fapp.glokki.com%22%7D&envDescription=Values%20from%20your%20glokki%20organization&envLink=https%3A%2F%2Fgithub.com%2Fglokki-cms%2Fstarter%23connect-to-glokki)
 
 The build does not need the CMS to be reachable or to contain any content. A fresh deploy shows a diagnostic welcome screen until you have connected and published a page.
 
-## Connect to glökki
+## Connect to glokki
 
 Set these four variables (Vercel asks for them on deploy; locally they go in `.env.local`):
 
 | Variable                | Where to find it                                                                            |
 | ----------------------- | ------------------------------------------------------------------------------------------- |
-| `CMS_BASE_URL`          | Your glökki address, `https://app.glokki.com` for the hosted CMS.                           |
+| `CMS_BASE_URL`          | Your glokki address, `https://app.glokki.com` for the hosted CMS.                           |
 | `CMS_TENANT`            | Your organization's slug (Settings → General).                                              |
 | `CMS_API_KEY`           | An API key with **only** the `delivery:read` scope (Settings → API keys). See below.        |
 | `CMS_REVALIDATE_SECRET` | A secret you invent: `openssl rand -hex 32`. Paste the same value into the CMS (see below). |
@@ -70,9 +70,9 @@ Four categories: Sections, Content, Media and Conversion.
 | `testimonials`  | Content    | Quotes with names and roles          |
 | `faq`           | Content    | Collapsible questions and answers    |
 | `cta`           | Conversion | A call-to-action banner              |
-| `contact`       | Conversion | Contact details and a glökki form    |
+| `contact`       | Conversion | Contact details and a glokki form    |
 
-The `contact` block needs the ID of a glökki form (Forms → copy ID). Until you set one, the visual editor shows a setup hint in its place; visitors see only the contact details.
+The `contact` block needs the ID of a glokki form (Forms → copy ID). Until you set one, the visual editor shows a setup hint in its place; visitors see only the contact details.
 
 ### Adding a block
 
@@ -92,7 +92,7 @@ Pages are fetched with the Next.js Data Cache under a `cms` tag. When you publis
 
 If edits don't appear within seconds, check **Settings → Visual Editor**: the **Revalidation URL** must point at `https://<your-site>/api/revalidate` and the **Webhook Secret** must equal `CMS_REVALIDATE_SECRET`.
 
-If you want the site to keep serving through a CMS outage, upgrade to `@glokki-cms/cache` with `@glokki-cms/cache-redis` or `@glokki-cms/cache-postgres`. They add a stale-while-revalidate layer in your own Redis or Postgres. The glökki guide "Tenant-side caching with PostgreSQL" walks through the setup.
+If you want the site to keep serving through a CMS outage, upgrade to `@glokki-cms/cache` with `@glokki-cms/cache-redis` or `@glokki-cms/cache-postgres`. They add a stale-while-revalidate layer in your own Redis or Postgres. The glokki guide "Tenant-side caching with PostgreSQL" walks through the setup.
 
 ## SEO
 

@@ -13,7 +13,7 @@ function Card({
     <main className="flex min-h-screen items-center justify-center px-6 py-16">
       <div className="rounded-theme-lg border-line bg-surface w-full max-w-xl border p-8 sm:p-10">
         <p className="text-xs font-semibold tracking-[0.12em] text-accent uppercase">
-          glökki starter
+          glokki starter
         </p>
         <h1 className="heading text-fg mt-3 text-3xl">{title}</h1>
         <div className="mt-6 space-y-4 text-muted">{children}</div>
@@ -39,7 +39,7 @@ export function WelcomeScreen({
   switch (state.kind) {
     case "missing-env":
       return (
-        <Card title="Your site is running — connect it to glökki">
+        <Card title="Your site is running — connect it to glokki">
           <p>Set these environment variables and redeploy:</p>
           <ul className="space-y-1">
             {state.missing.map((m) => (
@@ -56,7 +56,7 @@ export function WelcomeScreen({
       )
     case "unauthorized":
       return (
-        <Card title="glökki rejected the connection">
+        <Card title="glokki rejected the connection">
           <p>
             The CMS answered{" "}
             <strong className="text-fg">HTTP {state.httpStatus}</strong>. Check
@@ -68,7 +68,7 @@ export function WelcomeScreen({
       )
     case "unreachable":
       return (
-        <Card title="Can’t reach glökki">
+        <Card title="Can’t reach glokki">
           <p>
             The request failed before the CMS answered ({state.message}). Check{" "}
             <code className={code}>CMS_BASE_URL</code>.
@@ -77,7 +77,7 @@ export function WelcomeScreen({
       )
     case "cms-error":
       return (
-        <Card title="glökki returned an error">
+        <Card title="glokki returned an error">
           <p>
             HTTP {state.httpStatus}: {state.message}. Try again in a moment.
           </p>
@@ -87,7 +87,7 @@ export function WelcomeScreen({
       return (
         <Card title="Connected! Now create your first page">
           <p>
-            Your site talks to glökki, but nothing is published yet. Open the
+            Your site talks to glokki, but nothing is published yet. Open the
             editor, create a page with the slug <code className={code}>/</code>{" "}
             and publish it.
           </p>
@@ -97,7 +97,7 @@ export function WelcomeScreen({
                 href={`${cmsUrl.replace(/\/+$/, "")}/pages`}
                 className="font-medium text-accent"
               >
-                Open glökki →
+                Open glokki →
               </a>
             </p>
           )}

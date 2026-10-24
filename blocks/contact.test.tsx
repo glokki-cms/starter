@@ -34,11 +34,11 @@ describe("contact", () => {
   it("shows a setup hint in the editor when no form id is set", () => {
     renderInEditor(<Contact heading="Talk to us" formId="" />)
     expect(screen.queryByTestId("form")).toBeNull()
-    expect(screen.getByText(/create a form in glökki/i)).toBeInTheDocument()
+    expect(screen.getByText(/create a form in glokki/i)).toBeInTheDocument()
   })
   it("never shows the setup hint to public visitors", () => {
     render(<Contact heading="Talk to us" formId="" email="hi@acme.test" />)
-    expect(screen.queryByText(/create a form in glökki/i)).toBeNull()
+    expect(screen.queryByText(/create a form in glokki/i)).toBeNull()
     expect(screen.queryByText(/no form connected/i)).toBeNull()
     expect(screen.getByText("Talk to us")).toBeInTheDocument()
     expect(screen.getByRole("link", { name: "hi@acme.test" })).toBeVisible()
@@ -50,7 +50,7 @@ describe("contact", () => {
         <Contact formId="" />
       </VisualEditorContext.Provider>
     )
-    expect(screen.queryByText(/create a form in glökki/i)).toBeNull()
+    expect(screen.queryByText(/create a form in glokki/i)).toBeNull()
   })
   it("renders the CMS form when a form id is set", () => {
     render(<Contact formId="0b5d6c1e-7c1c-4a53-9a3e-0e0f6b2b1a11" />)
