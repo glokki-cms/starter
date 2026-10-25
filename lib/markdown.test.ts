@@ -1,6 +1,11 @@
-import { describe, expect, it } from "vitest"
+import { describe, expect, it, vi } from "vitest"
 
 import { markdownPageUrl, resolveMarkdownRequest } from "./markdown"
+
+// These tests exercise a non-default locale; the starter default is en only.
+vi.hoisted(() => {
+  process.env.CMS_LOCALES = "en,pl"
+})
 
 const r = (path: string) =>
   resolveMarkdownRequest(new Request(`https://a.com${path}`))

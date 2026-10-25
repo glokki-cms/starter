@@ -27,7 +27,7 @@ Then, in the CMS under **Settings → Visual Editor**:
 
 **Create `CMS_API_KEY` with only the `delivery:read` scope.** The key is embedded in your site's JavaScript (the contact form calls the Delivery API from the browser), so anyone can read it. Never use an admin-scoped key, or one you created for the import CLI or MCP: every scope you tick is published to every visitor.
 
-Set `CMS_LOCALES` (comma-separated, default `en,pl`) to your organization's locales. A locale the CMS doesn't have would get its own URL prefix serving the default-locale content.
+Set `CMS_LOCALES` (comma-separated, default `en`) to your organization's locales. A locale the CMS doesn't have would get its own URL prefix serving the default-locale content. If you add a locale in glokki (Settings → Locales), add it here too.
 
 Open the visual editor once. That handshake sends the block and layout definitions to the CMS, so the block picker shows this starter's blocks.
 

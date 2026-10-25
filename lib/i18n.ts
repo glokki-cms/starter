@@ -8,7 +8,7 @@
  */
 
 export function parseLocales(raw: string | undefined): string[] {
-  return (raw ?? "en,pl")
+  return (raw ?? "en")
     .split(",")
     .map((l) => l.trim().toLowerCase())
     .filter(Boolean)

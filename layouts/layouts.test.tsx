@@ -1,11 +1,16 @@
 import { render, screen } from "@testing-library/react"
 import { join } from "node:path"
 
-import { describe, expect, it } from "vitest"
+import { describe, expect, it, vi } from "vitest"
 
 import { Footer, footerSchema } from "./default/footer"
 import { Header, headerSchema } from "./default/header"
 import { layoutRegistry } from "./registry"
+
+// These tests exercise a non-default locale; the starter default is en only.
+vi.hoisted(() => {
+  process.env.CMS_LOCALES = "en,pl"
+})
 
 describe("layout registry", () => {
   it("has exactly default and empty", () => {

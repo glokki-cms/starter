@@ -1,6 +1,11 @@
 import { render, screen } from "@testing-library/react"
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 
+// These tests exercise a non-default locale; the starter default is en only.
+vi.hoisted(() => {
+  process.env.CMS_LOCALES = "en,pl"
+})
+
 const { getPageBySlug, probeCms, notFound } = vi.hoisted(() => ({
   getPageBySlug: vi.fn(),
   probeCms: vi.fn(),
